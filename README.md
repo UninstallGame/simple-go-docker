@@ -6,13 +6,13 @@
 ### Запуск в контейнере
 `docker-compose up -d --force-recreate`
 
-### Как проверить работу
-выполнить http запрос `http://localhost:8090/hi` Веб сервер вернет строку из docker-compose.yaml environment WHAT_SAY
+### Проверить работу
+Выполнить http запрос `http://localhost:8090/hi` Веб сервер вернет строку из docker-compose.yaml environment WHAT_SAY
 
 ### Полезные ссылки
 * Понятная статейка по докеру
 https://selectel.ru/blog/what-is-docker/
 * Мультисборка контейнеров 
 https://docs.docker.com/develop/develop-images/multistage-build/
-* Инфа по docer-compose
+* Инфа по docker-compose
 https://habr.com/ru/company/ruvds/blog/450312/
