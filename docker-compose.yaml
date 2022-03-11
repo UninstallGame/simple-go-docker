@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  main:
+    image: main-go-image
+    ports:
+      - "8090:8090"
+    command: [ "./main" ]
+    restart: always
+    volumes:
+      - ./logs/:/logs/
+    environment:
+      - "WHAT_SAY=worked"

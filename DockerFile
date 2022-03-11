@@ -1,0 +1,13 @@
+# Этап, на котором выполняется сборка приложения
+FROM golang:1.16-alpine as temp
+WORKDIR /build
+COPY go.mod .
+RUN go mod download
+COPY . .
+RUN GOOS=linux go build -o main ./app
+
+
+# Финальный этап, копируем собранное приложение
+FROM alpine:3
+WORKDIR /bin
+COPY --from=temp /build/main .
