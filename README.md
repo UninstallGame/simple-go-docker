@@ -16,4 +16,3 @@ https://selectel.ru/blog/what-is-docker/
 https://docs.docker.com/develop/develop-images/multistage-build/
 * Инфа по docker-compose
 https://habr.com/ru/company/ruvds/blog/450312/
-Test
